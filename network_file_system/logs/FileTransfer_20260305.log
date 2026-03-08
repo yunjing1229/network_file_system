@@ -1,0 +1,29 @@
+2026-03-05 14:05:02,524 - FileTransfer - INFO - 正在请求文件列表...
+2026-03-05 14:05:02,525 - FileTransfer - INFO - 已发送文件列表请求，等待服务器响应...
+2026-03-05 14:05:02,526 - FileTransfer - INFO - 正在扫描目录: E:\zihan\python\project\network_file_system\data\uploads
+2026-03-05 14:05:02,528 - FileTransfer - INFO - 成功发送 4 个文件列表给客户端 ('127.0.0.1', 62831)
+2026-03-05 14:05:02,528 - FileTransfer - INFO - 收到服务器响应: get_filelist
+2026-03-05 14:05:02,528 - FileTransfer - INFO - 成功获取 4 个文件
+2026-03-05 14:05:02,528 - FileTransfer - INFO - 目录: E:\zihan\python\project\network_file_system\data\uploads
+2026-03-05 14:06:11,043 - FileTransfer - INFO - 请求下载文件: 大学.txt
+2026-03-05 14:06:11,046 - FileTransfer - INFO - 处理下载请求: 大学.txt 来自 ('127.0.0.1', 62831)
+2026-03-05 14:06:11,046 - FileTransfer - INFO - 开始发送文件: 大学.txt (11.5 KB)
+755 字节
+2026-03-05 14:06:11,047 - FileTransfer - INFO - 下载目录: E:\zihan\python\project\network_file_system\data\downloads
+2026-03-05 14:06:11,047 - FileTransfer - INFO - 保存路径: E:\zihan\python\project\network_file_system\data\downloads\大学.txt
+2026-03-05 14:06:11,047 - FileTransfer - INFO - 开始接收文件: 大学.txt (11.5 KB)
+2026-03-05 14:06:11,147 - FileTransfer - INFO - 开始发送文件给客户端 ('127.0.0.1', 62831): E:\zihan\python\project\network_file_system\data\uploads\大学.txt
+2026-03-05 14:06:11,150 - FileTransfer - INFO - 发送进度: 100.0% (11.5 KB/11.5 KB)
+2026-03-05 14:06:11,151 - FileTransfer - INFO - 文件发送完成: 11755 字节
+2026-03-05 14:06:11,151 - FileTransfer - INFO - ✅ 文件接收完成: 大学.txt
+2026-03-05 14:06:40,252 - FileTransfer - INFO - 准备文件传输: E:/zihan/python/project/network_file_system/data/downloads/123.txt via TCP
+2026-03-05 14:06:40,252 - FileTransfer - INFO - 发送文件头，大小: 225 字节
+2026-03-05 14:06:40,426 - FileTransfer - INFO - 文件发送完成: E:/zihan/python/project/network_file_system/data/downloads/123.txt
+2026-03-05 14:06:40,426 - FileTransfer - INFO - 大小: 108625 字节, 块数: 106/106
+2026-03-05 14:06:40,426 - FileTransfer - INFO - 速度: 610.25 KB/s, 耗时: 0.17秒
+2026-03-05 14:06:40,428 - FileTransfer - INFO - 正在请求文件列表...
+2026-03-05 14:06:40,429 - FileTransfer - INFO - 已发送文件列表请求，等待服务器响应...
+2026-03-05 14:06:40,429 - FileTransfer - INFO - 正在扫描目录: E:\zihan\python\project\network_file_system\data\uploads
+2026-03-05 14:06:40,430 - FileTransfer - INFO - 成功发送 4 个文件列表给客户端 ('127.0.0.1', 62831)
+2026-03-05 14:06:40,430 - FileTransfer - INFO - 收到服务器响应: get_filelist
+2026-03-05 14:06:40,430 - FileTransfer - INFO - 目录: E:\zihan\python\project\network_file_system\data\uploads

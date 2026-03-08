@@ -1,0 +1,13 @@
+﻿{
+  "tcp_port": 8888,
+    "udp_port": 8889,
+    "buffer_size": 8192,
+    "max_connections": 10,
+    "server_ip": "192.168.0.107",
+    "upload_dir": "data/uploads",
+    "download_dir": "data/downloads",
+    "log_dir": "logs",
+    "max_file_size": 104857600,
+    "thread_pool_size": 5,
+    "timeout": 30
+}

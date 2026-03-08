@@ -1,0 +1,329 @@
+  File "E:\zihan\python\project\network_file_system\src\ui\clientUI.py", line 1047, in start_upload
+    self.upload_in_progress['value'] = 0
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'bool' object does not support item assignmentmport requests
+import os
+import time
+import threading
+from tqdm import tqdm
+from requests_toolbelt import MultipartEncoder, MultipartEncoderMonitor
+
+class FileTransferApp:
+    def __init__(self, root=None):
+        self.root = root
+        self.upload_in_progress = False
+        self.download_in_progress = False
+        self.upload_stats = {}
+        self.download_stats = {}
+        
+    def start_upload(self, file_path, upload_url):
+        """开始上传文件（使用 tqdm 显示进度）"""
+        if not os.path.exists(file_path):
+            print("文件不存在")
+            return
+            
+        self.upload_stats = {
+            'start_time': time.time(),
+            'bytes_sent': 0,
+            'total_bytes': os.path.getsize(file_path)
+   File "E:\zihan\python\project\network_file_system\src\ui\clientUI.py", line 1047, in start_upload
+    self.upload_in_progress['value'] = 0
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'bool' object does not support item assignmentmport requests
+import os
+import time
+import threading
+from tqdm import tqdm
+from requests_toolbelt import MultipartEncoder, MultipartEncoderMonitor
+
+class FileTransferApp:
+    def __init__(self, root=None):
+        self.root = root
+        self.upload_in_progress = False
+        self.download_in_progress = False
+        self.upload_stats = {}
+        self.download_stats = {}
+        
+    def start_upload(self, file_path, upload_url):
+        """开始上传文件（使用 tqdm 显示进度）"""
+        if not os.path.exists(file_path):
+            print("文件不存在")
+            return
+            
+        self.upload_stats = {
+            'start_time': time.time(),
+            'bytes_sent': 0,
+            'total_bytes': os.path.getsize(file_path)
+        }
+        self.upload_in_progress = True
+        
+        print(f"开始上传: {file_path} ({self.upload_stats['total_bytes']} bytes)")
+        
+        # 在新线程中执行上传
+        upload_thread = threading.Thread(
+            target=self._upload_file_with_tqdm,
+            args=(file_path, upload_url),
+            daemon=True
+        )
+        upload_thread.start()
+        
+    def _upload_file_with_tqdm(self, file_path, upload_url):
+        """使用 tqdm 显示上传进度"""
+        try:
+            total_size = os.path.getsize(file_path)
+            
+            # 使用 tqdm 创建进度条
+            progress_bar = tqdm(
+                total=total_size,
+                unit='B',
+                unit_scale=True,
+                desc=f"上传 {os.path.basename(file_path)}",
+                ncols=100
+            )
+            
+            def progress_callback(monitor):
+                """进度回调函数"""
+                bytes_read = monitor.bytes_read
+         }
+        self.upload_in_progress = True
+        
+        print(f"开始上传: {file_path} ({self.upload_stats['total_bytes']} bytes)")
+        
+        # 在新线程中执行上传
+        upload_thread = threading.Thread(
+            target=self._upload_file_with_tqdm,
+            args=(file_path, upload_url),
+            daemon=True
+        )
+        upload_thread.start()
+        
+    def _upload_file_with_tqdm(self, file_path, upload_url):
+        """使用 tqdm 显示上传进度"""
+        try:
+            total_size = os.path.getsize(file_path)
+            
+            # 使用 tqdm 创建进度条
+            progress_bar = tqdm(
+                total=total_size,
+                unit='B',
+                unit_scale=True,
+                desc=f"上传 {os.path.basename(file_path)}",
+                ncols=100
+            )
+            
+            def progress_callback(monitor):
+                """进度回调函数"""
+                bytes_read = monitor.bytes_read
+                progress_bar.update(bytes_read - progress_bar.n)
+                self.upload_stats['bytes_sent'] = bytes_read
+                
+                # 计算速度
+                current_time = time.time()
+                elapsed = current_time - self.upload_stats['start_time']
+                if elapsed > 0:
+                    speed = bytes_read / elapsed / 1024  # KB/s
+                    self.upload_stats['speed'] = speed
+            
+            # 创建 multipart encoder
+            with open(file_path, 'rb') as f:
+                encoder = MultipartEncoder(
+                    fields={
+                        'file': (
+                            os.path.basename(file_path), 
+                            f, 
+                            'application/octet-stream'
+                        )
+                    }
+                )
+                
+                # 创建 monitor
+                monitor = MultipartEncoderMonitor(encoder, progress_callback)
+                
+                headers = {
+                    'Content-Type': monitor.content_type
+                }
+                
+                # 发送请求
+                response = requests.post(
+                    upload_url,
+                    data=monitor,
+                    headers=headers,
+                    timeout=60
+                )
+                
+                # 完成进度条
+                progress_bar.close()
+                
+                if response.status_code == 200:
+                    print(f"✓ 上传成功!")
+                    return response.json() if response.content else True
+                else:
+                    print(f"✗ 上传失败: {response.status_code}")
+                    return None
+                    
+        except Exception as e:
+            print(f"✗ 上传错误: {e}")
+            return None
+        finally:
+            self.upload_in_progress = False
+            
+    def start_download(self, download_url, save_path):
+        ""60)
+            
+            # 如果没获取到大小，尝试从响应头获取
+            if total_size == 0:
+                total_size = int(response.headers.get('content-length', 0))
+            
+            # 创建 tqdm 进度条
+            progress_bar = tqdm(
+                total=total_size,
+                unit='B',
+                unit_scale=True,
+                desc=f"下载 {os.path.basename(save_path)}",
+                ncols=100
+            )
+            
+            downloaded = 0
+            with open(save_path, 'wb') as f:
+                for chunk in response.iter_content(chunk_size=8192):
+                    if chunk:
+                        f.write(chunk)
+                        downloaded += len(chunk)
+                        
+                        # 更新进度条
+                        progress_bar.update(len(chunk))
+                        self.download_stats['bytes_received'] = downloaded
+            
+            progress_bar.close()
+            print"开始下载文件（使用 tqdm 显示进度）"""
+        self.download_in_progress = True
+        
+        print(f"开始下载: {download_url}")
+        
+        # 在新线程中执行下载
+        download_thread = threading.Thread(
+            target=self._download_file_with_tqdm,
+            args=(download_url, save_path),
+            daemon=True
+        )
+        download_thread.start()
+        
+    def _download_file_with_tqdm(self, download_url, save_path):
+        """使用 tqdm 显示下载进度"""
+        try:
+            # 尝试获取文件大小
+            try:
+                head_response = requests.head(download_url, timeout=5, allow_redirects=True)
+                total_size = int(head_response.headers.get('content-length', 0))
+            except:
+                total_size = 0
+                
+            self.download_stats['total_bytes'] = total_size
+            
+            # 开始下载
+            response = requests.get(download_url, stream=True, timeout=(f"✓ 下载成功! 保存到: {save_path}")
+            
+            return True
+            
+        except Exception as e:
+            print(f"✗ 下载错误: {e}")
+            return False
+        finally:
+            self.download_in_progress = False
+
+    # 如果你还需要 GUI 进度条，可以这样更新
+    def update_gui_progress_with_tqdm(self):
+        """结合 tqdm 和 GUI 进度条"""
+        if self.upload_in_progress:
+            bytes_sent = self.upload_stats.get('bytes_sent', 0)
+            total_bytes = self.upload_stats.get('total_bytes', 1)
+            
+            if total_bytes > 0:
+                progress = min(100, (bytes_sent / total_bytes) * 100)
+                # 更新 GUI 进度条
+                if hasattr(self, 'update_upload_progress'):
+                    self.update_upload_progress(progress, bytes_sent)
+
+# 使用示例
+if __name__ == "__main__":
+    app = FileTransferApp()
+    
+    # 测试上传
+    # app.start_upload("test.txt", "http://httpbin.org/post")
+    
+    # 测试下载
+    # app.start_download("http://speedtest.ftp.otenet.gr/files/test1Mb.db", "test1Mb.db")
+更简单的纯 tqdm 版本（只显示控制台进度）：
+python
+import requests
+from tqdm import tqdm
+import os
+
+def download_with_tqdm(url, save_path):
+    """使用 tqdm 下载文件"""
+    response = requests.get(url, stream=True)
+    total_size = int(response.headers.get('content-length', 0))
+    
+    # 创建进度条
+    progress_bar = tqdm(total=total_size, unit='B', unit_scale=True, desc='下载中')
+    
+    with open(save_path, 'wb') as file:
+        for chunk in response.iter_content(chunk_size=8192):
+            if chunk:
+                file.write(chunk)
+                progress_bar.update(len(chunk))
+    
+    progress_bar.close()
+    print(f"下载完成: {save_path}")
+
+def upload_with_tqdm(file_path, upload_url):
+    """使用 tqdm 上传文件"""
+    total_size = os.path.getsize(file_path)
+    
+    # 创建进度条
+    progress_bar = tqdm(total=total_size, unit='B', unit_scale=True, desc='上传中')
+    
+    def callback(bytes_read):
+        progress_bar.update(bytes_read - progress_bar.n)
+    
+    # 读取文件并上传
+    with open(file_path, 'rb') as file:
+        files = {'file': (os.path.basename(file_path), file)}
+        response = requests.post(upload_url, files=files)
+    
+    progress_bar.close()
+    
+    if response.status_code == 200:
+        print("上传成功")
+    else:
+        print(f"上传失败: {response.status_code}")
+
+# 安装：pip install requests tqdm
+# 使用：download_with_tqdm("http://example.com/file.zip", "file.zip")
+结合 requests-toolbelt 和 tqdm 的精确上传进度：
+python
+from requests_toolbelt import MultipartEncoder, MultipartEncoderMonitor
+from tqdm import tqdm
+import requests
+import os
+
+def upload_file_with_tqdm_progress(file_path, url):
+    """使用 tqdm 显示精确上传进度"""
+    total_size = os.path.getsize(file_path)
+    
+    # 创建进度条
+    progress_bar = tqdm(
+        total=total_size,
+        unit='B',
+        unit_scale=True,
+        desc=os.path.basename(file_path),
+        bar_format='{l_bar}{bar}| {n_fmt}/{total_fmt} [{elapsed}<{remaining}, {rate_fmt}]'
+    )
+    
+    def callback(monitor):
+        # 更新进度条
+        progress_bar.n = monitor.bytes_read
+        progress_bar.refresh()
+    
+    with open(file_path, 'rb') as f:
+        encoder = MultipartEncoder

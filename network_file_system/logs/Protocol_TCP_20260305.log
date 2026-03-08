@@ -1,0 +1,15 @@
+2026-03-05 14:04:40,895 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-05 14:04:40,895 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-05 14:04:40,895 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-05 14:04:40,895 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-05 14:04:40,895 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-05 14:04:40,897 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-05 14:04:40,898 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-05 14:05:02,522 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-05 14:05:02,522 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-05 14:05:02,524 - Protocol_TCP - INFO - 已连接到TCP服务器 127.0.0.1:8888
+2026-03-05 14:05:02,524 - Protocol_TCP - INFO - 启动线程: TCP_Client_('127.0.0.1', 62831)
+2026-03-05 14:05:02,526 - Protocol_TCP - INFO - 客户端连接: ('127.0.0.1', 62831)
+2026-03-05 14:06:40,476 - Protocol_TCP - ERROR - 发送数据失败: [WinError 10057] 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2026-03-05 14:14:45,529 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-05 14:14:45,529 - Protocol_TCP - INFO - 客户端断开: ('127.0.0.1', 62831)

@@ -1,0 +1,205 @@
+2026-03-03 11:23:10,040 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 11:23:10,041 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 11:23:10,041 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-03 11:23:10,041 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-03 11:23:10,041 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-03 11:23:10,044 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-03 11:23:10,044 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-03 11:36:46,559 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 11:36:46,559 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 11:36:46,561 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 11:36:46,562 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 52039)
+2026-03-03 11:36:46,562 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 52039)
+2026-03-03 12:14:35,284 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 12:14:35,285 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 52039)
+2026-03-03 12:15:24,014 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 12:15:24,014 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 12:15:24,016 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 12:15:24,016 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 53039)
+2026-03-03 12:15:24,016 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 53039)
+2026-03-03 12:18:58,750 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 12:18:58,751 - Protocol_TCP - INFO - 客户端 ('192.168.0.102', 53039) 连接被重置
+2026-03-03 12:18:58,752 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 53039)
+2026-03-03 12:19:04,680 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 12:19:04,680 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 12:19:04,681 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 12:19:04,682 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 51884)
+2026-03-03 12:19:04,682 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 51884)
+2026-03-03 12:21:03,557 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 12:21:03,557 - Protocol_TCP - INFO - 客户端 ('192.168.0.102', 51884) 连接被重置
+2026-03-03 12:21:03,558 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 51884)
+2026-03-03 12:21:10,002 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 12:21:10,002 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 12:21:10,003 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 12:21:10,004 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 52281)
+2026-03-03 12:21:10,004 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 52281)
+2026-03-03 12:27:57,220 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 12:27:57,221 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 52281)
+2026-03-03 12:28:35,334 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 12:28:35,334 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 12:28:35,335 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 12:28:35,337 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 55378)
+2026-03-03 12:28:35,338 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 55378)
+2026-03-03 12:28:36,897 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 12:28:36,897 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 55378)
+2026-03-03 12:28:41,598 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 12:28:41,961 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 12:28:46,775 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 12:28:46,776 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 12:28:46,776 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-03 12:28:46,776 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-03 12:28:46,776 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-03 12:28:46,779 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-03 12:28:46,779 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-03 12:28:54,489 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 12:28:54,489 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 12:28:54,490 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 12:28:54,491 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 52941)
+2026-03-03 12:28:54,491 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 52941)
+2026-03-03 12:35:12,021 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 12:35:12,021 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 52941)
+2026-03-03 12:35:43,741 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 12:35:43,741 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 12:35:43,741 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-03 12:35:43,741 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-03 12:35:43,742 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-03 12:35:43,744 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-03 12:35:43,744 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-03 12:35:50,167 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 12:35:50,168 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 12:35:50,169 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 12:35:50,170 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 49258)
+2026-03-03 12:35:50,170 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 49258)
+2026-03-03 12:42:32,013 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 12:42:32,014 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 49258)
+2026-03-03 12:42:40,444 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 12:42:41,021 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 12:42:43,943 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 12:42:43,944 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 12:42:43,944 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-03 12:42:43,944 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-03 12:42:43,944 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-03 12:42:43,947 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-03 12:42:43,947 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-03 12:42:51,983 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 12:42:51,983 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 12:42:51,985 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 12:42:51,985 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 53193)
+2026-03-03 12:42:51,985 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 53193)
+2026-03-03 12:53:49,258 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 12:53:49,258 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 53193)
+2026-03-03 12:53:55,513 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 12:53:55,513 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 12:53:55,513 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-03 12:53:55,514 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-03 12:53:55,514 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-03 12:53:55,517 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-03 12:53:55,517 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-03 12:54:05,552 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 12:54:05,553 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 12:54:05,554 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 12:54:05,555 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 58795)
+2026-03-03 12:54:05,560 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 58795)
+2026-03-03 13:00:39,542 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 13:00:39,542 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 58795)
+2026-03-03 13:00:45,591 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:00:45,591 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:00:45,591 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-03 13:00:45,591 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-03 13:00:45,592 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-03 13:00:45,596 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-03 13:00:45,596 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-03 13:00:52,246 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:00:52,246 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:00:52,248 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 13:00:52,284 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 62191)
+2026-03-03 13:00:52,437 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 62191)
+2026-03-03 13:02:18,216 - Protocol_TCP - ERROR - 发送数据失败: [WinError 10057] 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2026-03-03 13:06:43,899 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 13:06:43,899 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 62191)
+2026-03-03 13:07:13,946 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:07:13,947 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:07:13,947 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-03 13:07:13,947 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-03 13:07:13,947 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-03 13:07:13,950 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-03 13:07:13,951 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-03 13:07:18,444 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:07:18,445 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:07:18,446 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 13:07:18,446 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 52788)
+2026-03-03 13:07:18,446 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 52788)
+2026-03-03 13:07:25,878 - Protocol_TCP - ERROR - 发送数据失败: [WinError 10057] 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2026-03-03 13:18:59,628 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 13:18:59,628 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 52788)
+2026-03-03 13:32:56,744 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:32:56,745 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:32:56,745 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-03 13:32:56,745 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-03 13:32:56,745 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-03 13:32:56,747 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-03 13:32:56,747 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-03 13:35:51,947 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:35:51,948 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:35:51,948 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 13:35:51,949 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 52845)
+2026-03-03 13:35:51,949 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 52845)
+2026-03-03 13:36:23,951 - Protocol_TCP - ERROR - 发送数据失败: [WinError 10057] 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2026-03-03 13:41:56,362 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 13:41:56,363 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 52845)
+2026-03-03 13:42:02,336 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:42:02,337 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:42:02,337 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-03 13:42:02,337 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-03 13:42:02,337 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-03 13:42:02,341 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-03 13:42:02,341 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-03 13:42:08,532 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:42:08,532 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:42:08,534 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 13:42:08,534 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 60790)
+2026-03-03 13:42:08,534 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 60790)
+2026-03-03 13:44:47,505 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 13:44:47,505 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 60790)
+2026-03-03 13:44:54,914 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:44:54,915 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:44:54,915 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-03 13:44:54,915 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-03 13:44:54,915 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-03 13:44:54,917 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-03 13:44:54,917 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-03 13:44:59,522 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:44:59,523 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:44:59,524 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 13:44:59,524 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 63017)
+2026-03-03 13:44:59,524 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 63017)
+2026-03-03 13:46:09,144 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 13:46:09,144 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 63017)
+2026-03-03 13:46:15,215 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:46:15,215 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:46:15,215 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-03 13:46:15,215 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-03 13:46:15,215 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-03 13:46:15,217 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-03 13:46:15,218 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-03 13:46:19,558 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:46:19,558 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:46:19,559 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 13:46:19,560 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 61055)
+2026-03-03 13:46:19,560 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 61055)
+2026-03-03 13:47:52,767 - Protocol_TCP - ERROR - 发送数据失败: [WinError 10057] 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2026-03-03 13:52:00,216 - Protocol_TCP - INFO - TCP 协议已停止
+2026-03-03 13:52:00,216 - Protocol_TCP - INFO - 客户端断开: ('192.168.0.102', 61055)
+2026-03-03 13:52:05,130 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:52:05,130 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:52:05,130 - Protocol_TCP - INFO - 注册回调函数: data_received
+2026-03-03 13:52:05,130 - Protocol_TCP - INFO - 注册回调函数: client_connected
+2026-03-03 13:52:05,131 - Protocol_TCP - INFO - 注册回调函数: client_disconnected
+2026-03-03 13:52:05,134 - Protocol_TCP - INFO - 启动线程: TCP_Accept
+2026-03-03 13:52:05,134 - Protocol_TCP - INFO - TCP服务器启动在 0.0.0.0:8888
+2026-03-03 13:52:10,729 - Protocol_TCP - INFO - 注册回调函数: status
+2026-03-03 13:52:10,729 - Protocol_TCP - INFO - 注册回调函数: error
+2026-03-03 13:52:10,731 - Protocol_TCP - INFO - 已连接到TCP服务器 192.168.0.102:8888
+2026-03-03 13:52:10,731 - Protocol_TCP - INFO - 启动线程: TCP_Client_('192.168.0.102', 59863)
+2026-03-03 13:52:10,731 - Protocol_TCP - INFO - 客户端连接: ('192.168.0.102', 59863)
+2026-03-03 13:53:24,796 - Protocol_TCP - ERROR - 发送数据失败: [WinError 10057] 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
