@@ -83,7 +83,7 @@ network_file_system/
 直接运行：
 ```bash
 python server.py
-
+```
 
 ### Client 端
 通过参数选择运行方式：
@@ -93,4 +93,19 @@ python server.py
   python client.py ui
   # 或
   python client.py gui
-启动后可在图形界面上传、下载文件，并查看服务端文件列表。
+  ```
+  启动后可在图形界面上传、下载文件，并查看服务端文件列表。
+
+- **命令行模式**：
+  ```bash
+  python client.py <command> [filename]
+  ```
+  支持三种命令：
+  - `upload <filename>`：上传文件
+  - `download_request <filename>`：下载文件
+  - `get_filelist`：获取文件列表（无需文件名）
+
+运行时会有打印信息显示传输状态，若失败或漏传文件块会报错。
+
+### 依赖安装
+如有缺失的包，根据提示安装相应依赖即可。
